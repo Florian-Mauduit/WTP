@@ -28,7 +28,12 @@ h1 {
     left: 45%;
     top: 16%;
 }
-
+.container img{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr;
