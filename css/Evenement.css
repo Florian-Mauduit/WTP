@@ -1,0 +1,11 @@
+.h1 {
+text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ephesis', cursive;
+    background: linear-gradient(
+        180deg, rgba(0,0,0,0.8242647400757178) 22%, rgba(240,233,223,1) 96%);
+            color: white;
+}
