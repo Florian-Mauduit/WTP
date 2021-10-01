@@ -47,6 +47,14 @@ a {
 div {
   margin-top: 1%;
 }
+@media only screen and (max-width:400px){
+  p{
+    display: none;
+  }
+  h2 {
+    font-size: 100%;
+  }
+}
 .img {
   box-shadow: -5px 5px 0 0.8px #00000069;
   z-index: 1;
