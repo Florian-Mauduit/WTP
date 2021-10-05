@@ -53,11 +53,16 @@ button {
   border: none;
 }
 .monument img {
+  cursor: pointer;
   width: 300px;
   height: 440px;
   justify-content: center;
   margin: 14px;
+  transition: 0.5s;
 }
+/* .placeDeLaConcordePopup:hover {
+  transform:scale(1.25);
+} */
 
 #galerieMonument {
   display: flex;
@@ -70,7 +75,7 @@ button {
   margin: 0 auto 100px;
 }
 
-.overlay {
+.overlay, .overlayTourEiffel, .overlayArc, .overlayNotreDame, .overlayLeLouvres, .overlayPantheon, .overlayPlace {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -81,10 +86,10 @@ button {
   display: none;
 }
 
-.popup {
+.popup, .popupTourEiffel, .popupArc, .popupNotreDame, .popupLeLouvres, .popupPantheon, .popupPlace  {
   display: flex;
   margin: 10% auto;
-  flex-direction: row-reverse;
+  flex-direction: row;
   width: 70%;
   color: #fff;
   background-color: #9b9b9b;
@@ -95,8 +100,14 @@ button {
 }
 
 .btnClose {
+  cursor: pointer;
   float: right;
-  font-size: 16pt;
+  font-size: 60px;
   cursor: pointer;
   color: rgb(255, 255, 255);
+  margin-top: -32px;
+}
+
+.popupText {
+  font-size: 30px;
 }
