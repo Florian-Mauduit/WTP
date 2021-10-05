@@ -19,7 +19,7 @@ h1 {
   margin-right: auto;
   margin-top: -3%;
   display: block;
-  width: 8em;
+  width: 10%;
 }
 @media only screen and (max-width: 700px) {
   #logo {
@@ -27,7 +27,7 @@ h1 {
     margin-right: auto;
     margin-top: -5%;
     display: block;
-    width: 6em;
+    /* width: 6em; */
   }
 }
 body {
@@ -45,11 +45,23 @@ a {
   
 }
 div {
-  margin-top: 1%;
+  margin: 1% 5%;
+}
+.smalltitle {
+  text-align: center;
+  font-size: 165%;
+  position: inherit;
+  margin: 0;
+}
+@media only screen and (min-width: 701px) {
+  .smalltitle {
+    display: none;
+  }
 }
 @media only screen and (max-width:400px){
   p{
     display: none;
+    font-size: 100%;
   }
   h2 {
     font-size: 100%;
@@ -62,6 +74,9 @@ div {
   position: relative;
   margin: 0 0 0 15%;
 }
+.img:hover {
+  transform:scale(1.2);
+}
 @media only screen and (max-width: 700px) {
   .img {
     box-shadow: -5px 5px 0 0.8px #00000069;
@@ -72,27 +87,32 @@ div {
   }
 }
 .left {
-  left: 60%;
+  left: 48%;
+}
+@media only screen and (min-width: 701px) and ( max-width: 1000px) {
+  .left{
+    margin:0;
+  }
 }
 .container {
   text-align: center;
-  font-size: calc(3px + 1em);
+  font-size: 110%;
   box-shadow: 5px 5px 0 0.8px #00000069;
   background: white;
   margin: -4% 20% 0 20%;
-  display: grid;
+  display: none;
 }
-@media only screen and (max-width: 700px) {
-  .container1,
-  .container2,
-  .container3,
-  .container4,
-  .container5 {
-    text-align: center;
-    font-size: calc(3px + 1em);
-    box-shadow: 5px 5px 0 0.8px #00000069;
-    background: white;
+@media only screen and (min-width: 700px) {
+  .container{
+    display: grid;
   }
+}
+.linkPage {
+  margin-left: 10%;
+}
+.linkPage:hover {
+  color: blue;
+  font-size: 150%;
 }
 footer {
   text-align: center;
