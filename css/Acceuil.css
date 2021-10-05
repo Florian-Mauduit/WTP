@@ -4,7 +4,7 @@ h1 {
   font-size: 3em;
   padding: 1em 0 1em 0;
   color: white;
-  background: url(/Images/Eiffel\ Tower\ black&White.jpg);
+  background: url("../Images/EiffelTowerblack&WhiteMain.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
