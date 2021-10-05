@@ -1,11 +1,79 @@
-.h1 {
-text-align: center;
+@media (min-width: 768px) and (max-width: 1388px) {
+  #global {
+    width: 100%;
+
+    padding: 0px;
+  }
+
+  #menu-gauche {
+    width: 100%;
+  }
+
+  #contenu {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  #global {
+    width: 100%;
+
+    padding: 0px;
+  }
+
+  #menu-gauche {
+    width: 100%;
+  }
+
+  #contenu {
+    width: 100%;
+  }
+
+  #sidebar-droite {
+    width: 100%;
+  }
 }
 
 body {
-    margin: 0;
-    font-family: 'Ephesis', cursive;
-    background: linear-gradient(
-        180deg, rgba(0,0,0,0.8242647400757178) 22%, rgba(240,233,223,1) 96%);
-            color: white;
+  margin: 0;
+  font-family: "Ephesis", cursive;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8242647400757178) 22%,
+    rgba(240, 233, 223, 1) 96%
+  );
+  color: white;
+  height: 3000px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+  padding: 1em 0 2em 0;
+  /* background: black; */
+  color: white;
+  background: url(/Images/421522-Kycb_1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#logo {
+  position: absolute;
+  left: 45%;
+  top: 16%;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-size: xxx-large;
+}
+
+.container {
+  background-color: white;
+  width: 514px;
+  font-size: x-large;
+  color: black;
+  text-align: center;
 }
