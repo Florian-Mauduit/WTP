@@ -1,39 +1,3 @@
-@media (min-width: 768px) and (max-width: 1388px) {
-  #global {
-    width: 100%;
-
-    padding: 0px;
-  }
-
-  #menu-gauche {
-    width: 100%;
-  }
-
-  #contenu {
-    width: 80%;
-  }
-}
-
-@media (max-width: 767px) {
-  #global {
-    width: 100%;
-
-    padding: 0px;
-  }
-
-  #menu-gauche {
-    width: 100%;
-  }
-
-  #contenu {
-    width: 100%;
-  }
-
-  #sidebar-droite {
-    width: 100%;
-  }
-}
-
 body {
   margin: 0;
   font-family: "Ephesis", cursive;
