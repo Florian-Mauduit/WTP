@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "Ephesis", cursive;
+    background: linear-gradient(
+      180deg,
+      rgb(0 0 0 / 92%) 46%,
+      rgb(255 255 255) 123%
+    );
+  }
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 10vw;
+  padding: 5% 0 5% 0;
+  color: white;
+  background: url(../Images/EiffelTowerblack&WhiteMain.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: row;
+}
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3vw;
+        padding: 2% 0 2% 0;
+    }
+}
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -6%;
+  margin-bottom: 2%;
+  display: flex;
+  width: 17%;
+}
+@media (min-width: 700px) {
+    #logo {
+        margin-top: -2%;
+        width: 10vw;
+    }
+}
+.pageTitle {
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+}
+@media (min-width: 700px) {
+    .pageTitle {
+        font-size: 3vw;
+    }
+}
+.mainColumns {
+  margin: 10%;
+}
+.imgArticle1 {
+  width: 40%;
+  float: left;
+  margin-right: 7%;
+  margin-bottom: 7%;
+}
+.imgArticle2 {
+    width: 40%;
+    float: right;
+    margin-left: 7%;
+    margin-bottom: 7%;
+}
+@media (min-width: 700px) {
+    .imgArticle1, .imgArticle2{
+        width: 30%;
+    }
+}
+.article1 {
+    font-size: 129%;
+    color: black;
+    height: auto;
+    text-align: justify;
+    display: flex;
+    background: white;
+    padding: 2%;
+    box-shadow: -5px 5px 0 0.8px #000000;
+}
+@media (min-width: 700px) {
+    .article1 {
+        font-size: 1.5vw;
+    }
+}
