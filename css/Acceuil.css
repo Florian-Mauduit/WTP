@@ -1,51 +1,175 @@
-h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 3em;
-  padding: 1em 0 1em 0;
-  color: white;
-  background: url("../Images/EiffelTowerblack&WhiteMain.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-}
-@media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-#logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -3%;
-  display: block;
-  width: 10%;
-}
-@media only screen and (max-width: 700px) {
-  #logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5%;
-    display: block;
-    /* width: 6em; */
-  }
-}
 body {
   margin: 0;
   font-family: "Ephesis", cursive;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.8242647400757178) 22%,
-    rgba(240, 233, 223, 1) 96%
+    rgb(0 0 0 / 92%) 46%,
+    rgb(255 255 255) 123%
   );
+}
+.dropbtn {
+  border: none;
+  width: 7vw;
+  height: 7vw;
+  background: transparent;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-left: 45vw;
+  margin-top: -10vw;
+  z-index: 0;
+  width: 9vw;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 0.3vw 3vw;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content #Accueil {
+  display: flex;
+  position: absolute;
+  right: 11.8vw;
+  top: -8vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #Accueil {
+    display: flex;
+    position: absolute;
+    right: 7.8vw;
+    top: -8vw;
+  }
+}
+.dropdown-content #paris {
+  display: flex;
+  position: absolute;
+  right: 42vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #paris {
+    display: flex;
+    position: absolute;
+    right: 9vw;
+    top: -6vw;
+  }
+}
+.dropdown-content #monuments {
+  display: flex;
+  position: absolute;
+  right: 41.5vw;
+  top: -9vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #monuments {
+    display: flex;
+    position: absolute;
+    right: 8.5vw;
+    top: -4vw;
+  }
+}
+.dropdown-content #gastronomy {
+  display: flex;
+  position: absolute;
+  right: 10.5vw;
+    top: -4vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #gastronomy {
+    display: flex;
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+  }
+}
+.dropdown-content #evenement {
+  display: flex;
+  position: absolute;
+  right: 37.5vw;
+  top: -4vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #evenement {
+    display: flex;
+    position: absolute;
+    right: 7.5vw;
+    top: -2vw;
+  }
+}
+.dropdown-content #contact {
+  display: flex;
+  position: absolute;
+  right: 11.8vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #contact {
+    display: flex;
+    position: absolute;
+    right: 5.8vw;
+    top: 0vw;
+  }
+} 
+.dropdown-content a:hover {
+  background-color: rgba(221, 221, 221, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e4100;
+  border-radius: 50%;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 10vw;
+  padding: 5% 0 5% 0;
+  color: white;
+  background: url(../Images/EiffelTowerblack&WhiteMain.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  flex-direction: row;
+}
+@media (min-width: 700px) {
+  h1 {
+    font-size: 3vw;
+    padding: 2% 0 2% 0;
+  }
+}
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -6%;
+  margin-bottom: 2%;
+  display: flex;
+  width: 17%;
+}
+@media only screen and (min-width: 700px) {
+  #logo {
+    margin-top: -2%;
+    width: 10vw;
+  }
 }
 a {
   text-decoration: none;
   color: black;
   
-}
-div {
-  margin: 1% 5%;
 }
 .smalltitle {
   text-align: center;
@@ -58,9 +182,14 @@ div {
     display: none;
   }
 }
+h2 {
+  font-size: 2vw;
+}
+p {
+  font-size: 1.5vw;
+}
 @media only screen and (max-width:400px){
   p{
-    display: none;
     font-size: 100%;
   }
   h2 {
@@ -70,7 +199,7 @@ div {
 .img {
   box-shadow: -5px 5px 0 0.8px #00000069;
   z-index: 1;
-  width: 276px;
+  width: 20vw;
   position: relative;
   margin: 0 0 0 15%;
 }
@@ -112,7 +241,6 @@ div {
 }
 .linkPage:hover {
   color: blue;
-  font-size: 150%;
 }
 footer {
   text-align: center;

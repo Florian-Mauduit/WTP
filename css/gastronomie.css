@@ -8,21 +8,19 @@ body {
   );
 }
 .dropbtn {
-  background: url(Images/Logo.png);
-  color: white;
   border: none;
-  background-position: bottom;
-  background-size: 7vw;
   width: 7vw;
   height: 7vw;
+  background: transparent;
 }
 
 .dropdown {
   position: absolute;
   display: inline-block;
-  margin-left: 46vw;
+  margin-left: 45vw;
   margin-top: -10vw;
   z-index: 0;
+  width: 9vw;
 }
 
 .dropdown-content {
@@ -36,79 +34,95 @@ body {
 
 .dropdown-content a {
   color: rgb(255, 255, 255);
-  padding: 0 16px;
+  padding: 0.3vw 3vw;
   text-decoration: none;
   display: block;
-}
-.dropdown-content #paris {
-  display: flex;
-  position: absolute;
-  right: 45vw;
-  top: -13vw;
-}
-@media only screen and (min-width: 700px) {
-  .dropdown-content #paris {
-    display: flex;
-    position: absolute;
-    right: 11vw;
-    top: -8vw;
-  }
-}
-.dropdown-content #monuments {
-  display: flex;
-  position: absolute;
-  right: 44.5vw;
-  top: -9vw;
-}
-@media only screen and (min-width: 700px) {
-  .dropdown-content #monuments {
-    display: flex;
-    position: absolute;
-    right: 11.5vw;
-    top: -6vw;
-  }
-}
-.dropdown-content #evenement {
-  display: flex;
-  position: absolute;
-  right: 43.5vw;
-  top: -4vw;
-}
-@media only screen and (min-width: 700px) {
-.dropdown-content #evenement {
-  display: flex;
-  position: absolute;
-  right: 11.5vw;
-  top: -4vw;
-}}
-.dropdown-content #contact {
-  display: flex;
-  position: absolute;
-  right: 13.8vw;
-  top: -13vw;
-}
-@media only screen and (min-width: 700px) {
-  .dropdown-content #contact {
-    display: flex;
-    position: absolute;
-    right: 10.8vw;
-    top: -2vw;
-  }
 }
 .dropdown-content #Accueil {
   display: flex;
   position: absolute;
-  right: 13.8vw;
+  right: 11.8vw;
   top: -8vw;
 }
 @media only screen and (min-width: 700px) {
   .dropdown-content #Accueil {
     display: flex;
     position: absolute;
-    right: 8.8vw;
+    right: 7.8vw;
+    top: -8vw;
+  }
+}
+.dropdown-content #paris {
+  display: flex;
+  position: absolute;
+  right: 42vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #paris {
+    display: flex;
+    position: absolute;
+    right: 9vw;
+    top: -6vw;
+  }
+}
+.dropdown-content #monuments {
+  display: flex;
+  position: absolute;
+  right: 41.5vw;
+  top: -9vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #monuments {
+    display: flex;
+    position: absolute;
+    right: 8.5vw;
+    top: -4vw;
+  }
+}
+.dropdown-content #gastronomy {
+  display: flex;
+  position: absolute;
+  right: 10.5vw;
+    top: -4vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #gastronomy {
+    display: flex;
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vw;
+  }
+}
+.dropdown-content #evenement {
+  display: flex;
+  position: absolute;
+  right: 37.5vw;
+  top: -4vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #evenement {
+    display: flex;
+    position: absolute;
+    right: 7.5vw;
+    top: -2vw;
+  }
+}
+.dropdown-content #contact {
+  display: flex;
+  position: absolute;
+  right: 11.8vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #contact {
+    display: flex;
+    position: absolute;
+    right: 5.8vw;
     top: 0vw;
   }
 }
+
 .dropdown-content a:hover {
   background-color: rgba(221, 221, 221, 0);
 }
