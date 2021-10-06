@@ -15,19 +15,101 @@
         <h1>Welcome To Paris</h1>
         <img src="Images/Logo.png" alt="Logo" id="logo" />
       </header>
-    <div class="container">
-        <div class="containerTourEiffel"><img src="Images/Monument/tourEiffel.jpg" class="tourEiffel" alt="Tour Eiffel de nuit"></div>
-        <div class="textTourEiffel"><p id="textTourEiffel">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quas.</p></div>
-        <div class="containerArcDeTriomphes"><img src="Images/Monument/arcDeTriomphes.jpg" alt="Arc de Triomphes de nuit" class="arcDeTriomphes"></div>
-        <div class="textArcdeTriomphes"><p id="textArcDeTriomphes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, inventore?</p></div>
-        <div class="containerNotreDame"><img src="Images/Monument/cathédraleNotreDame.jpg" alt="Cathédrale Notre Dame" class="NotreDame"></div>
-        <div class="textNotreDame"><p id="textNotreDame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, earum!</p></div>
-        <div class="containerLeLouvre"><img src="Images/Monument/leLouvresMonument.jpg" alt="Le louvres" class="leLouvres"></div>
-        <div class="textLeLouvre"><p id="textLeLouvres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, earum!</p></div>
-        <div class="containerPantheon"><img src="Images/Monument/panthéonMonument.jpg" alt="Panthéon Monument" class="pantheon"></div>
-        <div class="textPantheon"><p id="textPantheon">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, nobis!</p></div>
-        <div class="containerPlaceConcorde"><img src="Images/Monument/placeDeLaConcorde.jpg" alt="Place de la Concorde" class="placeConcorde"></div>
-        <div class="textPlaceConcorde"><p id="textPlaceConcorde">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, rerum.</p></div>
-      </div>
+      <!-- Section Monument -->
+      <h2 class="titreMonument">Les Différent Monument de Paris</h2>
+      <hr class="separationTitre">
+      <section class="monument" id="galerieMonument">
+          <!-- Partie tour Eiffel -->
+          <button id="monumentTourEiffel"><img src="Images/Monument/tourEiffel.jpg" alt="Tour Eiffel"></button>
+          <div id="overlayTourEiffel" class="overlayTourEiffel">
+            <div id="popupTourEiffel" class="popupTourEiffel">
+              <img src="Images/Monument/tourEiffel.jpg" alt="Tour Eiffel">
+                 <div>
+                    <span id="btnCloseTourEiffel" class="btnClose">&times;</span>
+                    <p class="popupText">The Eiffel Tower Écouter is a 324-metre-high puddle iron tower
+                      (with antennas)o 1 located in Paris, at the north-western end of the Champ-de-Mars
+                      park on the banks of the Seine in the 7th arrondissement.
+                      Its official address is 5, avenue Anatole-France.</p>
+                 </div>
+                </div>
+            </div>
+            <!-- Partie Arc de Triomphes -->
+          <button id="monumentArcDeTriomphes"><img src="Images/Monument/arcDeTriomphes.jpg" alt="Arc de arc de Triomphes"></button>
+          <div id="overlayArcDeTriomphes" class="overlayArc">
+            <div id="popupArcDeTriomphes" class="popupArc">
+              <img src="Images/Monument/arcDeTriomphes.jpg" alt="Arc de arc de Triomphes">
+                 <div>
+                    <span id="btnCloseArcDeTriomphes" class="btnClose">&times;</span>
+                    <p class="popupText">The Arc de Triomphe de l'Étoile, often referred to simply as the Arc de Triomphe1,
+                      is a monument located in Paris, at a high point at the junction of the territories of the 8th, 16th and 17th arrondissements,
+                      notably at the top of the Avenue des Champs-Élysées and the Avenue de la Grande-Armée, which form a major
+                      east-west Parisian axis starting from the Louvre pyramid, passing through the obelisk of La Concorde,
+                      the Arc de Triomphe itself and ending in the distance with the Arche de la Défense.
+                    </p>
+                 </div>
+            </div>
+            </div>
+            <!-- Partie Cathédrale Notre Dame  -->
+          <button id="monumentCathedraleNotreDame"><img src="Images/Monument/cathédraleNotreDame.jpg" alt="Cathédrale Notre Dame"></button>
+          <div id="overlayCathedraleNotreDame" class="overlayNotreDame">
+            <div id="popupCathedraleNotreDame" class="popupNotreDame">
+                <img src="Images/Monument/cathédraleNotreDame.jpg" alt="Cathedrale Notre Dame">
+                 <div>
+                    <span id="btnCloseCathedraleNotreDame" class="btnClose">&times;</span>
+                    <p class="popupText">Notre-Dame de Paris Cathedral, commonly known as Notre-Dame,
+                      is one of the most emblematic monuments of Paris and France. It is located on the Ile de la Cité and
+                      is a Catholic place of worship, seat of the Archdiocese of Paris, dedicated to the Virgin Mary.</p>
+                 </div>
+            </div>
+            </div>
+            <!-- Partie Le musée le Louvre -->
+          <button id="monumentleLouvres"><img src="Images/Monument/leLouvresMonument.jpg" alt="le Louvres"></button>
+          <div id="overlayLouvresMonument" class="overlayLeLouvres">
+            <div id="popupLouvresMonument" class="popupLeLouvres">
+                <h2><img src="Images/Monument/leLouvresMonument.jpg" alt="Arc de arc de Triomphes">
+                </h2>
+                 <div>
+                    <span id="btnCloseLouvresMonument" class="btnClose">&times;</span>
+                    <p class="popupText">The Louvre is a museum located in the 1st arrondissement of Paris, France.
+                      A prefiguration of it was imagined in 1775-1776 by the Count d'Angiviller, Director General of the King's
+                      Buildings, as a place to display the masterpieces of the Crown's collection. The museum was only inaugurated
+                      in 1793 as the Muséum central des arts de la République in the Louvre Palace, a former royal residence in
+                      the centre of Paris, and is now the largest museum of art and antiquities in the world. Its exhibition space
+                      is 72,735 m28.
+                    </p>
+                 </div>
+            </div>
+            </div>
+            <!-- Partie Panthéon  -->
+          <button id="monumentPantheon"><img src="Images/Monument/panthéonMonument.jpg" alt="Panthéon"></button>
+          <div id="overlayPantheon" class="overlayPantheon">
+            <div id="popupPantheon" class="popupPantheon">
+              <img src="Images/Monument/panthéonMonument.jpg" alt="Panthéon">
+                 <div>
+                    <span id="btnClosePantheon" class="btnClose">&times;</span>
+                    <p class="popupText">The Pantheon is a neo-classical monument located in the 5th arrondissement of Paris.
+                      In the heart of the Latin Quarter, on the Sainte-Geneviève mountain, it is in the centre of the Place du
+                      Panthéon and surrounded by the town hall of the 5th arrondissement, the Henri-IV high school,
+                      the Saint-Etienne-du-Mont church, the Sainte-Geneviève library and the law faculty. The rue Soufflot gives
+                      it a perspective as far as the Luxembourg Gardens.
+                    </p>
+                 </div>
+            </div>
+            </div>
+            <!-- Partie Place de la concorde -->
+          <button id="monumentLaConcorde"><img src="Images/Monument/placeDeLaConcorde.jpg" alt="place de la Concorde"></button>
+          <div id="overlayLaConcorde" class="overlayPlace">
+            <div id="popupLaConcorde" class="popupPlace">
+                <img src="Images/Monument/placeDeLaConcorde.jpg" class="placeDeLaConcordePopup" alt="place de la Concorde">
+                 <div>
+                    <span id="btnCloseLaConcorde" class="btnClose">&times;</span>
+                    <p class="popupText">The Place de la Concorde, which covers 8.64 hectares, is the largest square in Paris.
+                      The name was chosen by the Directory to mark the reconciliation of the French after the excesses of the Terror.
+                    </p>
+                 </div>
+            </div>
+          </div>
+    </div>
+    <script src="js/monument.js"></script>
 </body>
 </html>
