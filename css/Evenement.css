@@ -7,7 +7,7 @@ body {
     rgba(240, 233, 223, 1) 96%
   );
   color: white;
-  height: 3000px;
+  height: auto;
 }
 
 h1 {
@@ -21,23 +21,109 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-#logo {
-  position: absolute;
-  left: 45%;
-  top: 16%;
-}
 
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  display: block;
+  width: 8em;
+}
+@media only screen and (max-width: 700px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    display: block;
+    width: 6em;
+  }
+}
 .title {
   text-align: center;
   position: relative;
-  top: 100px;
-  font-size: xxx-large;
+  top: 50px;
+  font-size: 3vw;
 }
 
+
+
 .container {
-  background-color: white;
-  width: 514px;
-  font-size: x-large;
-  color: black;
   text-align: center;
+  font-size: 2vw;
+  box-shadow: 5px 5px 0 0.8px #00000069;
+  background: white;
+  margin: 6% 20% 0 20%;
+  display: grid;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    display: block;
+    font-size: 6vw;
+    margin: 133px 10px 0 10px;
+  }
+}
+
+.art1 {
+  width: 40%;
+  box-shadow: -5px 5px 0 0.8px #00000069;
+  position: relative;
+  margin: 120px 0 -130px 16%;
+}
+
+@media only screen and (max-width: 700px) {
+  .art1 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.art2 {
+  width: 40%;
+  box-shadow: -5px 5px 0 0.8px #00000069;
+  position: relative;
+  margin: 120px 0 -130px 49%;
+}
+
+@media only screen and (max-width: 700px) {
+  .art2 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+}
+
+.container2 {
+  text-align: center;
+  font-size: 2vw;
+  box-shadow: 5px 5px 0 0.8px #00000069;
+  background: white;
+  margin: 6% 20% 0 20%;
+  display: grid;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .container2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    display: block;
+    font-size: 6vw;
+    margin: 133px 10px 0 10px;
+  }
 }
