@@ -54,7 +54,7 @@ h1 {
 
 .container {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   box-shadow: 5px 5px 0 0.8px #00000069;
   background: white;
   margin: 6% 20% 0 20%;
@@ -109,7 +109,7 @@ h1 {
 
 .container2 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   box-shadow: 5px 5px 0 0.8px #00000069;
   background: white;
   margin: 6% 20% 0 20%;
@@ -127,5 +127,3 @@ h1 {
     margin: 133px 10px 0 10px;
   }
 }
-
-
