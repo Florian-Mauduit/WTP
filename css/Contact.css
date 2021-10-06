@@ -1,5 +1,9 @@
-body {
+*{
   margin: 0;
+padding: 0;
+}
+
+body {
   font-family: "Ephesis", cursive;
   background: linear-gradient(
     180deg,
@@ -7,7 +11,24 @@ body {
     rgba(240, 233, 223, 1) 96%
   );
   color: white;
-  height: auto;
+  height: 968px;
+}
+@media only screen and (max-width: 700px){
+  body {
+    height: auto;
+  }
+}
+.title {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 6vw;
+  }
 }
 
 h1 {
@@ -33,7 +54,7 @@ h1 {
   margin-right: auto;
   margin-top: -3%;
   display: block;
-  width: 8em;
+  width: 10%;
 }
 @media only screen and (max-width: 700px) {
   #logo {
@@ -42,6 +63,17 @@ h1 {
     margin-top: -5%;
     display: block;
     width: 6em;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    text-align: center;
   }
 }
 
@@ -71,9 +103,6 @@ ul#nav-box li a:hover {
   background-color: #4b4b69;
   color: #d9d940;
   border-left: 1px solid #fff;
-}
-h1 {
-  text-align: center;
 }
 .form-style {
   margin: 10px auto;
@@ -121,10 +150,6 @@ textarea {
   border: 1px solid #bebebe;
   padding: 7px;
   margin: 0px;
-  /* -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;*/
   outline: none;
 }
 .form-style .long {

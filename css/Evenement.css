@@ -1,5 +1,8 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: "Ephesis", cursive;
   background: linear-gradient(
     180deg,
@@ -50,7 +53,11 @@ h1 {
   font-size: 3vw;
 }
 
-
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 6vw;
+  }
+}
 
 .container {
   text-align: center;
