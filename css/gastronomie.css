@@ -1,12 +1,127 @@
 body {
-    margin: 0;
-    font-family: "Ephesis", cursive;
-    background: linear-gradient(
-      180deg,
-      rgb(0 0 0 / 92%) 46%,
-      rgb(255 255 255) 123%
-    );
+  margin: 0;
+  font-family: "Ephesis", cursive;
+  background: linear-gradient(
+    180deg,
+    rgb(0 0 0 / 92%) 46%,
+    rgb(255 255 255) 123%
+  );
+}
+.dropbtn {
+  background: url(Images/Logo.png);
+  color: white;
+  border: none;
+  background-position: bottom;
+  background-size: 7vw;
+  width: 7vw;
+  height: 7vw;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-left: 46vw;
+  margin-top: -10vw;
+  z-index: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 0 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content #paris {
+  display: flex;
+  position: absolute;
+  right: 45vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #paris {
+    display: flex;
+    position: absolute;
+    right: 11vw;
+    top: -8vw;
   }
+}
+.dropdown-content #monuments {
+  display: flex;
+  position: absolute;
+  right: 44.5vw;
+  top: -9vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #monuments {
+    display: flex;
+    position: absolute;
+    right: 11.5vw;
+    top: -6vw;
+  }
+}
+.dropdown-content #evenement {
+  display: flex;
+  position: absolute;
+  right: 43.5vw;
+  top: -4vw;
+}
+@media only screen and (min-width: 700px) {
+.dropdown-content #evenement {
+  display: flex;
+  position: absolute;
+  right: 11.5vw;
+  top: -4vw;
+}}
+.dropdown-content #contact {
+  display: flex;
+  position: absolute;
+  right: 13.8vw;
+  top: -13vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #contact {
+    display: flex;
+    position: absolute;
+    right: 10.8vw;
+    top: -2vw;
+  }
+}
+.dropdown-content #Accueil {
+  display: flex;
+  position: absolute;
+  right: 13.8vw;
+  top: -8vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #Accueil {
+    display: flex;
+    position: absolute;
+    right: 8.8vw;
+    top: 0vw;
+  }
+}
+.dropdown-content a:hover {
+  background-color: rgba(221, 221, 221, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e4100;
+  border-radius: 50%;
+}
+
 h1 {
   margin: 0;
   text-align: center;
@@ -20,10 +135,10 @@ h1 {
   flex-direction: row;
 }
 @media (min-width: 700px) {
-    h1 {
-        font-size: 3vw;
-        padding: 2% 0 2% 0;
-    }
+  h1 {
+    font-size: 3vw;
+    padding: 2% 0 2% 0;
+  }
 }
 #logo {
   margin-left: auto;
@@ -34,20 +149,20 @@ h1 {
   width: 17%;
 }
 @media (min-width: 700px) {
-    #logo {
-        margin-top: -2%;
-        width: 10vw;
-    }
+  #logo {
+    margin-top: -2%;
+    width: 10vw;
+  }
 }
 .pageTitle {
-    text-align: center;
-    color: white;
-    font-size: 6vw;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
 }
 @media (min-width: 700px) {
-    .pageTitle {
-        font-size: 3vw;
-    }
+  .pageTitle {
+    font-size: 3vw;
+  }
 }
 .mainColumns {
   margin: 10%;
@@ -59,28 +174,25 @@ h1 {
   margin-bottom: 7%;
 }
 .imgArticle2 {
-    width: 40%;
-    float: right;
-    margin-left: 7%;
-    margin-bottom: 7%;
+  width: 40%;
+  float: right;
+  margin-left: 7%;
+  margin-bottom: 7%;
 }
 @media (min-width: 700px) {
-    .imgArticle1, .imgArticle2{
-        width: 30%;
-    }
+  .imgArticle1,
+  .imgArticle2 {
+    width: 30%;
+  }
 }
 .article1 {
-    font-size: 129%;
-    color: black;
-    height: auto;
-    text-align: justify;
-    display: flex;
-    background: white;
-    padding: 2%;
-    box-shadow: -5px 5px 0 0.8px #000000;
+  font-size: 129%;
+  color: white;
+  height: auto;
+  text-align: justify;
 }
 @media (min-width: 700px) {
-    .article1 {
-        font-size: 1.5vw;
-    }
+  .article1 {
+    font-size: 1.5vw;
+  }
 }
