@@ -41,8 +41,8 @@ body {
 .dropdown-content #Accueil {
   display: flex;
   position: absolute;
-  right: 11.8vw;
-  top: -8vw;
+  right: 52.8vw;
+  top: -14vw;
 }
 @media only screen and (min-width: 700px) {
   .dropdown-content #Accueil {
@@ -55,8 +55,8 @@ body {
 .dropdown-content #paris {
   display: flex;
   position: absolute;
-  right: 42vw;
-  top: -13vw;
+  right: 54vw;
+  top: -10vw;
 }
 @media only screen and (min-width: 700px) {
   .dropdown-content #paris {
@@ -69,8 +69,8 @@ body {
 .dropdown-content #monuments {
   display: flex;
   position: absolute;
-  right: 41.5vw;
-  top: -9vw;
+  right: 51.5vw;
+  top: -7vw;
 }
 @media only screen and (min-width: 700px) {
   .dropdown-content #monuments {
@@ -80,42 +80,42 @@ body {
     top: -4vw;
   }
 }
+.dropdown-content #contact {
+  display: flex;
+  position: absolute;
+  right: 21.5vw;
+  top: -7vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #contact {
+    display: flex;
+    position: absolute;
+    right: 2.5vw;
+    top: 0.7vw;
+  }
+}
 .dropdown-content #gastronomy {
   display: flex;
   position: absolute;
-  right: 10.5vw;
-    top: -4vw;
+  right: 12.5vw;
+  top: -14vw;
 }
 @media only screen and (min-width: 700px) {
   .dropdown-content #gastronomy {
-    display: flex;
-    position: absolute;
-    right: 0.5vw;
-    top: 0.5vw;
-  }
-}
-.dropdown-content #evenement {
-  display: flex;
-  position: absolute;
-  right: 37.5vw;
-  top: -4vw;
-}
-@media only screen and (min-width: 700px) {
-  .dropdown-content #evenement {
     display: flex;
     position: absolute;
     right: 7.5vw;
     top: -2vw;
   }
 }
-.dropdown-content #contact {
+.dropdown-content #evenement {
   display: flex;
   position: absolute;
-  right: 11.8vw;
-  top: -13vw;
+  right: 12.8vw;
+  top: -10vw;
 }
 @media only screen and (min-width: 700px) {
-  .dropdown-content #contact {
+  .dropdown-content #evenement {
     display: flex;
     position: absolute;
     right: 5.8vw;
