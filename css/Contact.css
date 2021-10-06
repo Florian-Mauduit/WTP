@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Ephesis", cursive;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8242647400757178) 22%,
+    rgba(240, 233, 223, 1) 96%
+  );
+  color: white;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+  padding: 1em 0 2em 0;
+  /* background: black; */
+  color: white;
+  background: url(/Images/421522-Kycb_1920x1080.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  display: block;
+  width: 8em;
+}
+@media only screen and (max-width: 700px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    display: block;
+    width: 6em;
+  }
+}
+
+ul#nav-box {
+  margin: 0 0 1.5em 0;
+  padding: 5px 22em 5px 0;
+  list-style-type: none;
+  color: beige;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+ul#nav-box li {
+  display: inline;
+  padding: 5px 0;
+}
+
+ul#nav-box li a {
+  padding: 5px 1em 5px 1em;
+  color: beige;
+  text-decoration: none;
+  border-left: 1px solid #fff;
+}
+
+ul#nav-box li a:hover {
+  background-color: #4b4b69;
+  color: #d9d940;
+  border-left: 1px solid #fff;
+}
+h1 {
+  text-align: center;
+}
+.form-style {
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px 12px 10px 20px;
+}
+.form-style td {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+.form-style label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: bold;
+}
+.form-style .required {
+  color: red;
+}
+.form-style input[type="submit"],
+.form-style input[type="reset"] {
+  background: #4eb5f1;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+.form-style input[type="submit"]:hover,
+.form-style input[type="reset"]:hover {
+  background: #4eb5f1;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.form-style .field-textarea {
+  height: 100px;
+}
+.form-style input[type="text"],
+.form-style input[type="email"],
+textarea {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0px;
+  /* -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;*/
+  outline: none;
+}
+.form-style .long {
+  width: 100%;
+}
+.form-style input[type="text"]:focus,
+.form-style input[type="email"]:focus,
+.form-style textarea:focus {
+  -moz-box-shadow: 0 0 8px #88d5e9;
+  -webkit-box-shadow: 0 0 8px #88d5e9;
+  box-shadow: 0 0 8px #88d5e9;
+  border: 1px solid #88d5e9;
+}
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+}
