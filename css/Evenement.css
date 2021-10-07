@@ -74,7 +74,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35%;
-    display: block;
+    display: none;
     font-size: 6vw;
     margin: 133px 10px 0 10px;
   }
@@ -129,7 +129,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35%;
-    display: block;
+    display: none;
     font-size: 6vw;
     margin: 133px 10px 0 10px;
   }
