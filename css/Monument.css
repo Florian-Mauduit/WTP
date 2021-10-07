@@ -1,63 +1,205 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    margin: 0;
-    font-family: 'Ephesis', cursive;
-    background: linear-gradient(
-        180deg, rgba(0,0,0,0.8242647400757178) 22%, rgba(240,233,223,1) 96%);
-    color: white;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 3em;
-    padding: 1em 0 2em 0;
-    /* background: black; */
-    color: white;
-    background: url(/Images/Eiffel\ Tower\ black&White.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+body {
+  margin: 0;
+  font-family: "Ephesis", cursive;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8242647400757178) 22%,
+    rgba(240, 233, 223, 1) 96%
+  );
+  color: white;
 }
 
 #logo {
-    position: absolute;
-    left: 45%;
-    top: 16%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3%;
+  display: block;
+  width: 10%;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "containerTourEiffel containerTourEiffel . . ."
-      ". . textTourEiffel textTourEiffel ."
-      "containerArcDeTriomphes containerArcDeTriomphes . . ."
-      ". . textArcdeTriomphes textArcdeTriomphes ."
-      "containerNotreDame containerNotreDame . . ."
-      ". . textNotreDame textNotreDame ."
-      "containerLeLouvre containerLeLouvre . . ."
-      ". . textLeLouvre textLeLouvre ."
-      "containerPantheon containerPantheon . . ."
-      ". . textPantheon textPantheon ."
-      "containerPlaceConcorde containerPlaceConcorde . . ."
-      ". . textPlaceConcorde textPlaceConcorde .";
+@media only screen and (max-width: 700px) {
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    display: block;
+    /* width: 6em; */
   }
-  .containerTourEiffel { grid-area: containerTourEiffel; }
-  .textTourEiffel { grid-area: textTourEiffel; }
-  .containerArcDeTriomphes { grid-area: containerArcDeTriomphes; }
-  .textArcdeTriomphes { grid-area: textArcdeTriomphes; }
-  .containerNotreDame { grid-area: containerNotreDame; }
-  .textNotreDame { grid-area: textNotreDame; }
-  .containerLeLouvre { grid-area: containerLeLouvre; }
-  .textLeLouvre { grid-area: textLeLouvre; }
-  .containerPantheon { grid-area: containerPantheon; }
-  .textPantheon { grid-area: textPantheon; }
-  .containerPlaceConcorde { grid-area: containerPlaceConcorde; }
-  .textPlaceConcorde { grid-area: textPlaceConcorde; }
+}
+
+/* --------------------  Partie Header -------------------- */
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 3em;
+
+  padding: 1em 0 1em 0;
+  color: white;
+  background: url("../Images/EiffelTowerblack&WhiteMain.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* --------------------  Partie Responsive Header -------------------- */
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  padding: 1em 0 2em 0;
+  /* background: black; */
+  color: white;
+  background: url(/Images/Eiffel\ Tower\ black&White.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+#logo {
+  position: absolute;
+  left: 45%;
+  top: 16%;
+}
+
+/* --------------------  Partie Body / Monument -------------------- */
+
+.titreMonument {
+
+  margin-top: 110px;
+  text-align: center;
+  font-size: 3vw;
+  color: #fff;
+  padding: 35px 0;
+}
+
+
+.separationTitre {
+  width: 200px;
+  margin: 10px 43% 25px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+.monument img {
+  cursor: pointer;
+  width: 300px;
+  height: 440px;
+  justify-content: center;
+  margin: 14px;
+  transition: 0.5s;
+}
+
+#galerieMonument {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  min-width: 300px;
+  margin: 0 auto 100px;
+}
+
+.overlay, .overlayTourEiffel, .overlayArc, .overlayNotreDame, .overlayLeLouvres, .overlayPantheon, .overlayPlace {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.popup, .popupTourEiffel, .popupArc, .popupNotreDame, .popupLeLouvres, .popupPantheon, .popupPlace  {
+  display: flex;
+  margin: 10% auto;
+  flex-direction: row;
+  width: 70%;
+  color: #fff;
+  background-color: #9b9b9b;
+  padding: 15px;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 30%);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btnClose {
+  cursor: pointer;
+  float: right;
+  font-size: 60px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: -32px;
+}
+
+.popupText {
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+/* --------------------  Partie Responsive Body / Monument -------------------- */
+
+@media only screen and (max-width: 770px) {
+  .separationTitre {
+    margin: 10px 40% 25px;
+  }
+  .monument img {
+    cursor: none;
+    width: 270px;
+    height: 400px;
+    margin: 15px;
+  }
+  .popupText {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .separationTitre {
+    margin: 10px 27% 25px;
+  }
+  .monument img {
+    cursor: none;
+    width: 270px;
+    height: 400px;
+    margin: 0px;
+  }
+  .popup, .popupTourEiffel, .popupArc, .popupNotreDame, .popupLeLouvres, .popupPantheon, .popupPlace {
+    flex-direction: column;
+    width: auto;
+  }
+  .popupText {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .btnClose {
+    margin-top: -430px;
+  }
+}
+
+
+@media only screen and (max-width: 330px) {
+  .separationTitre {
+    width: 120px;
+    margin: 10px 29% 25px;
+  }
+  .btnClose {
+    margin-top: -440px;
+    margin-right: -12px;
+  }
+}
+
