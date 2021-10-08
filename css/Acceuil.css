@@ -241,6 +241,7 @@ p {
 .linkPage:hover {
   color: blue;
 }
+
 footer {
   text-align: center;
   font-size: 100%;
@@ -254,4 +255,12 @@ footer {
     font-weight: bold;
     margin-top: 15%;
   }
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer p {
+  font-size: 1.5vw;
+  text-align: center;
 }
