@@ -1,47 +1,161 @@
+* {
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: "Ephesis", cursive;
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.8242647400757178) 22%,
-    rgba(240, 233, 223, 1) 96%
+    rgb(0 0 0 / 92%) 46%,
+    rgb(255 255 255) 123%
   );
-  color: white;
-  height: auto;
+}
+.dropbtn {
+  border: none;
+  width: 7vw;
+  height: 7vw;
+  background: transparent;
 }
 
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-left: 45vw;
+  margin-top: -10vw;
+  z-index: 0;
+  width: 9vw;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 0.3vw 3vw;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content #Accueil {
+  display: flex;
+  position: absolute;
+  right: 52.8vw;
+  top: -14vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #Accueil {
+    display: flex;
+    position: absolute;
+    right: 7.8vw;
+    top: -8vw;
+  }
+}
+.dropdown-content #paris {
+  display: flex;
+  position: absolute;
+  right: 54vw;
+  top: -10vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #paris {
+    display: flex;
+    position: absolute;
+    right: 9vw;
+    top: -6vw;
+  }
+}
+.dropdown-content #monuments {
+  display: flex;
+  position: absolute;
+  right: 51.5vw;
+  top: -7vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #monuments {
+    display: flex;
+    position: absolute;
+    right: 8.5vw;
+    top: -4vw;
+  }
+}
+.dropdown-content #contact {
+  display: flex;
+  position: absolute;
+  right: 21.5vw;
+  top: -7vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #contact {
+    display: flex;
+    position: absolute;
+    right: 2.5vw;
+    top: 0.7vw;
+  }
+}
+.dropdown-content #gastronomy {
+  display: flex;
+  position: absolute;
+  right: 12.5vw;
+  top: -14vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #gastronomy {
+    display: flex;
+    position: absolute;
+    right: 7.5vw;
+    top: -2vw;
+  }
+}
+.dropdown-content #evenement {
+  display: flex;
+  position: absolute;
+  right: 12.8vw;
+  top: -10vw;
+}
+@media only screen and (min-width: 700px) {
+  .dropdown-content #evenement {
+    display: flex;
+    position: absolute;
+    right: 5.8vw;
+    top: 0vw;
+  }
+}
+.dropdown-content a:hover {
+  background-color: rgba(221, 221, 221, 0);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e4100;
+  border-radius: 50%;
+}
 h1 {
   margin: 0;
   text-align: center;
-  font-size: 3em;
-  padding: 1em 0 2em 0;
-  /* background: black; */
+  font-size: 3vw;
+  padding: 2% 0 2% 0;
   color: white;
   background: url(/Images/421522-Kycb_1920x1080.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-}
-
-@media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 2em;
-  }
+  background-size: cover;
+  flex-direction: row;
 }
 #logo {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -3%;
-  display: block;
-  width: 8em;
-}
-@media only screen and (max-width: 700px) {
-  #logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5%;
-    display: block;
-    width: 6em;
-  }
+  margin-top: -2%;
+  display: flex;
+  width: 10vw;
+  margin-bottom: 2%;
 }
 .title {
   text-align: center;
@@ -49,9 +163,6 @@ h1 {
   top: 50px;
   font-size: 3vw;
 }
-
-
-
 .container {
   text-align: center;
   font-size: 2vw;
@@ -61,50 +172,17 @@ h1 {
   display: grid;
   color: black;
 }
-
-@media only screen and (max-width: 700px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35%;
-    display: block;
-    font-size: 6vw;
-    margin: 133px 10px 0 10px;
-  }
-}
-
 .art1 {
   width: 40%;
   box-shadow: -5px 5px 0 0.8px #00000069;
   position: relative;
   margin: 120px 0 -130px 16%;
 }
-
-@media only screen and (max-width: 700px) {
-  .art1 {
-    width: 62%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-  }
-}
-
 .art2 {
   width: 40%;
   box-shadow: -5px 5px 0 0.8px #00000069;
   position: relative;
   margin: 120px 0 -130px 49%;
-}
-
-@media only screen and (max-width: 700px) {
-  .art2 {
-    width: 62%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-  }
 }
 
 .container2 {
@@ -118,11 +196,50 @@ h1 {
 }
 
 @media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 10vw;
+    padding: 5% 0 5% 0;
+  }
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6%;
+    display: flex;
+    width: 17%;
+
+  }
+  .title {
+    font-size: 6vw;
+    color: white;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    display: none;
+    font-size: 6vw;
+    margin: 133px 10px 0 10px;
+  }
+
+  .art1 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .art2 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
   .container2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35%;
-    display: block;
+    display: none;
     font-size: 6vw;
     margin: 133px 10px 0 10px;
   }
