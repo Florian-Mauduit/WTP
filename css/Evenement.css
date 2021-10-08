@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,6 @@ body {
   color: white;
   height: auto;
 }
-
 h1 {
   margin: 0;
   text-align: center;
@@ -24,12 +23,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-
-@media only screen and (max-width: 700px) {
-  h1 {
-    font-size: 2em;
-  }
-}
 #logo {
   margin-left: auto;
   margin-right: auto;
@@ -37,28 +30,12 @@ h1 {
   display: block;
   width: 8em;
 }
-@media only screen and (max-width: 700px) {
-  #logo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5%;
-    display: block;
-    width: 6em;
-  }
-}
 .title {
   text-align: center;
   position: relative;
   top: 50px;
   font-size: 3vw;
 }
-
-@media only screen and (max-width: 700px) {
-  .title {
-    font-size: 6vw;
-  }
-}
-
 .container {
   text-align: center;
   font-size: 2vw;
@@ -68,50 +45,17 @@ h1 {
   display: grid;
   color: black;
 }
-
-@media only screen and (max-width: 700px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35%;
-    display: none;
-    font-size: 6vw;
-    margin: 133px 10px 0 10px;
-  }
-}
-
 .art1 {
   width: 40%;
   box-shadow: -5px 5px 0 0.8px #00000069;
   position: relative;
   margin: 120px 0 -130px 16%;
 }
-
-@media only screen and (max-width: 700px) {
-  .art1 {
-    width: 62%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-  }
-}
-
 .art2 {
   width: 40%;
   box-shadow: -5px 5px 0 0.8px #00000069;
   position: relative;
   margin: 120px 0 -130px 49%;
-}
-
-@media only screen and (max-width: 700px) {
-  .art2 {
-    width: 62%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-  }
 }
 
 .container2 {
@@ -125,6 +69,42 @@ h1 {
 }
 
 @media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 2em;
+  }
+  #logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5%;
+    display: block;
+    width: 6em;
+  }
+  .title {
+    font-size: 6vw;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    display: none;
+    font-size: 6vw;
+    margin: 133px 10px 0 10px;
+  }
+
+  .art1 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  .art2 {
+    width: 62%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
   .container2 {
     margin-left: auto;
     margin-right: auto;
