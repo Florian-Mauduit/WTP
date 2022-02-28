@@ -1,3 +1,4 @@
+// Partie formulaire
 function validateForm() {
   var name = document.forms["myForm"]["name"];
   var email = document.forms["myForm"]["email"];
