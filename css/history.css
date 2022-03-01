@@ -16,7 +16,7 @@ body {
 .dropbtn {
   border: none;
   width: 7vw;
-  height: 7vw;
+  height: 9vw;
   background: transparent;
 }
 
@@ -24,7 +24,7 @@ body {
   position: absolute;
   display: inline-block;
   margin-left: 45vw;
-  margin-top: -10vw;
+  margin-top: -12vw;
   z-index: 0;
   width: 9vw;
 }
@@ -37,7 +37,7 @@ body {
   display: none;
   position: absolute;
   background-color: transparent;
-  min-width: 160px;
+  min-width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -248,7 +248,6 @@ h1 {
   }
 }
 
-
 .pht2 {
   width: 40%;
   box-shadow: -5px 5px 0 0.8px #00000069;
@@ -280,8 +279,8 @@ footer {
   }
 }
 footer a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 footer p {
   font-size: 1.5vw;
